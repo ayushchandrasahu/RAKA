@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.coverage
+htmlcov/
+dist/
+build/
+*.egg-info/
+
+# Environment & Secrets
+.env
+*.env.local
+
+# IDE & Editor
+.vscode/
+.idea/
+.nova/
+*.swp
+*.swo
+
+# Binaries & Large Tools
+cloudflared.exe
+*.exe
+
+# System
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store

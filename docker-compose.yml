@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  raka:
+    build: .
+    container_name: raka_platform
+    ports:
+      - "8000:8000"
+    environment:
+      - PORT=8000
+      - HOST=0.0.0.0
+      - GEMINI_API_KEY=${GEMINI_API_KEY:-}
+      - RAKA_DEMO_MODE=${RAKA_DEMO_MODE:-0}
+    volumes:
+      - ./uploads:/app/uploads
+      - ./raka.db:/app/raka.db
+    restart: unless-stopped
